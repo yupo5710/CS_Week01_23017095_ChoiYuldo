@@ -28,12 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            pictureBox1 = new PictureBox();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(35, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(311, 353);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(775, 516);
+            button1.Name = "button1";
+            button1.Size = new Size(243, 46);
+            button1.TabIndex = 1;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Image = (Image)resources.GetObject("button2.Image");
+            button2.Location = new Point(427, 377);
+            button2.Name = "button2";
+            button2.Size = new Size(201, 185);
+            button2.TabIndex = 2;
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(84, 516);
+            button3.Name = "button3";
+            button3.Size = new Size(230, 46);
+            button3.TabIndex = 3;
+            button3.Text = "Github";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(14F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1072, 623);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(pictureBox1);
+            Name = "Form1";
             Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private PictureBox pictureBox1;
+        private Button button1;
+        private Button button2;
+        private Button button3;
     }
 }
